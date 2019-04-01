@@ -1,0 +1,29 @@
+<nav>
+  <div class="ui right aligned segment">
+    <div class="post-thumb"><img src="../assets/icon.jpg" /></div>
+    <div class="ui action input ">
+      <input type="text" placeholder="Search..." type="text" [(ngModel)]="searchText" name="searchText">
+      <button class="ui button" type="submit" (click)='search()'>Search</button>
+    </div>
+    <div class="ui primary button">Sign Up</div>
+  </div>
+  <div class="ui stackable inverted massive menu">
+    <a class="active item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </a>
+    <a class="item" routerLink="/hacker" routerLinkActive="active">
+      Hacker
+    </a>
+    <a class="item" routerLink="/future" routerLinkActive="active">
+      Next Big Future
+    </a>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+  <hr><br>
+  <footer>
+    <div class="ui inverted vertical footer segment">
+      <p>Arkadiusz Lesica 2019. All Rights Reserved</p>
+    </div>
+  </footer>

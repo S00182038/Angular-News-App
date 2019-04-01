@@ -1,0 +1,12 @@
+<!--Hacker News -->
+<h2>Latest Headlines</h2>
+<app-hacker *ngIf='isHackerAvailable' [hacker]='hacker'></app-hacker>
+<a class="ui secondary inverted basic button" routerLink="/hacker">See More... </a>
+<hr>
+
+<!-- Next Big Future -->
+<app-future *ngIf='isFutureAvailable'  [future]='future'></app-future>
+<a class="ui secondary inverted basic button"  routerLink="/future">See More News </a>
+
+
+

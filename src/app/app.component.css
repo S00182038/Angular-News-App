@@ -1,0 +1,13 @@
+nav{
+    margin:2% 5%;
+}
+.input{
+	padding: 3%;
+}
+.post-thumb {
+    float: left
+}
+.post-thumb img {
+	display: block;
+	height:100px;
+}

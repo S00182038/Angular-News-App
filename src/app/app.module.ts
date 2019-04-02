@@ -10,6 +10,10 @@ import { FutureComponent } from './future/future.component';
 import { SearchComponent } from './search/search.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { FavouritiesComponent } from './favourities/favourities.component';
+// import { AngularFireModule } from 'angularfire2';
+// import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { AngularFireAuthModule } from 'angularfire2/auth';
+// import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: '', component: NewsComponent },
@@ -22,17 +26,25 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    // environment,
     NewsComponent,
     HackerComponent,
     FutureComponent,
     SearchComponent,
     PagenotfoundComponent,
     FavouritiesComponent
-  ],
+    // AngularFireModule,
+    // AngularFirestoreModule,
+    // AngularFirestoreModule,
+    // AngularFireAuthModule
+ ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
+    // AngularFireModule.initializeApp(environment.firebase),
+    // AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    // AngularFireAuthModule, //
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

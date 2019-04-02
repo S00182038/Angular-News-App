@@ -13,7 +13,7 @@ import 'rxjs/add/operator/switchMap';
 export class SearchComponent implements OnInit {
 
   private articles: News[];
-  private searchText: string;
+  public searchText: string;
   constructor(private route: ActivatedRoute, private router: Router, private __newsService: NewsService) { }
   ngOnInit() {
       this.route.params.subscribe(params => {

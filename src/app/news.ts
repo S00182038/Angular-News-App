@@ -6,6 +6,7 @@ export interface News {
     source: Source;
     url: string;
     urlToImage: string;
+    content: string;
 }
 
 export interface Source {

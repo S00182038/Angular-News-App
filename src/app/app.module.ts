@@ -9,7 +9,7 @@ import { HackerComponent } from './hacker/hacker.component';
 import { FutureComponent } from './future/future.component';
 import { SearchComponent } from './search/search.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-
+import { FavouritiesComponent } from './favourities/favourities.component';
 
 const appRoutes: Routes = [
   { path: '', component: NewsComponent },
@@ -26,7 +26,8 @@ const appRoutes: Routes = [
     HackerComponent,
     FutureComponent,
     SearchComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    FavouritiesComponent
   ],
   imports: [
     BrowserModule,

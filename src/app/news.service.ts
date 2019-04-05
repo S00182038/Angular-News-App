@@ -14,12 +14,12 @@ export class NewsService {
     console.log(' News Service working ');
   }
   getHacker(): Observable<News[]> {
-    return this._http.get('https://newsapi.org/v2/top-headlines?' + 'sources=hacker-news&' + ' apiKey=' + this.api_key)
+    return this._http.get('https://newsapi.org/v2/top-headlines?sources=hacker-news&' + 'apiKey=' + this.api_key)
       .map(res => res.json().articles)
       .catch(this._errorHandler);
   }
   getFuture(): Observable<News[]> {
-    return this._http.get('https://newsapi.org/v2/top-headlines?sources=next-big-future&' + 'apiKey=' + this.api_key)
+    return this._http.get('https://newsapi.org/v2/everything?sources=next-big-future&apiKey=' + this.api_key)
       .map(res => res.json().articles)
       .catch(this._errorHandler);
   }
@@ -32,5 +32,4 @@ export class NewsService {
     console.error(error);
     return Observable.throw(error || 'Server Error');
   }
-
 }

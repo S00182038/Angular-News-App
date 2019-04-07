@@ -8,7 +8,6 @@ export interface News {
     urlToImage: string;
     content: string;
 }
-
 export interface Source {
     id: number;
     name: string;
